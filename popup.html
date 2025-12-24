@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MindJournal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+
+        <!-- HEADER -->
+        <header class="header">
+            <h1>🧠 MindJournal</h1>
+            <span class="tag">🔒 Offline & Private</span>
+        </header>
+
+        <!-- TABS -->
+        <nav class="tabs">
+            <button class="active">Mood</button>
+            <button>Stress</button>
+            <button>Journal</button>
+        </nav>
+
+        <!-- CONTENT -->
+        <main class="content">
+
+            <!-- MOOD SCREEN -->
+            <section class="screen active">
+                <h2>Current Mood</h2>
+                <div class="status-card yellow">
+                    <div class="emoji" id="moodEmoji">🙂</div>
+                    <p class="status-title" id="moodTitle">Feeling Okay</p>
+                    <p class="status-sub" id="moodSub">Stable emotional state</p>
+                </div>
+            </section>
+
+            <!-- STRESS SCREEN -->
+            <section class="screen">
+                <h2>Stress Level</h2>
+                <div class="status-card orange">
+                    <div class="big-number" id="stressNumber">3</div>
+                    <p class="status-title" id="stressTitle">Moderate Stress</p>
+                    <p class="status-sub" id="stressSub">Try taking short breaks</p>
+                </div>
+            </section>
+
+            <!-- JOURNAL SCREEN -->
+            <section class="screen">
+                <h2>Journal Entry</h2>
+                <textarea id="journalText" placeholder="Write freely. Your thoughts stay on this device."></textarea>
+                <button class="primary" id="analyzeBtn">Reflect on Mood</button>
+                <button class="danger" id="panicBtn">🚨 I Need Support</button>
+                <div class="result-box" id="result">Your reflections will appear here.</div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="nano.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>
