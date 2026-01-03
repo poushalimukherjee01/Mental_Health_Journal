@@ -1,70 +1,95 @@
 🧠 MindJournal
-The Privacy-First, Offline Mental Health Companion
-MindJournal is a lightweight browser extension designed for secure emotional reflection. By processing all sentiment analysis entirely on-device, it provides a "safe space" for users to journal without the fear of their most private thoughts being tracked, stored, or used for profiling.
+A Privacy-First, Offline Mental Health Companion
+
+MindJournal is a lightweight browser extension built for secure emotional reflection. It enables users to journal freely while ensuring that all mood analysis happens entirely on the device. No cloud, no accounts, no tracking — just a safe, private space for mental well-being.
+
+MindJournal is designed for people who want emotional support without sacrificing privacy, especially when writing about sensitive or high-stakes thoughts.
 
 🚀 Key Features
 🔒 100% On-Device Privacy
-Zero Data Leaks: No APIs, no cloud storage, and no trackers.
 
-Local Processing: Sentiment analysis is performed on the user's hardware.
+Zero Data Leaks: No APIs, no servers, no analytics, no trackers
 
-Sensitive-Ready: Designed specifically for high-stakes emotional inputs that users might not want to share with traditional cloud-based LLMs.
+Local Processing: All sentiment and safety analysis runs on the user’s device
+
+Sensitive-Ready: Built specifically for mental health inputs that users may not trust with cloud-based LLMs
 
 ✍️ Smart Journaling
-Free-Form Writing: A clean, distraction-free interface for daily reflection.
 
-Hybrid Analysis: Uses a fast, keyword-based local engine for immediate feedback, with optional Gemini Nano integration for deeper, local LLM insights.
+Free-Form Writing: A clean, distraction-free journaling interface
+
+Instant Feedback: Real-time emotional insights while you type
+
+Offline-First Design: Works fully without an internet connection
 
 😊 Intelligent Mood Detection
-The engine categorizes entries into four primary states, providing instant visual feedback:
 
-Positive: Encouraging affirmations.
+MindJournal categorizes journal entries into five emotional states:
 
-Low Mood: Supportive prompts for self-care.
+Positive: Reinforces healthy patterns with affirmations
 
-Stress / Anxiety: Grounding exercises.
+Low Mood: Encourages gentle self-care and reflection
 
-High Distress: Immediate redirection to local resources.
+Stress / Anxiety: Offers grounding techniques and calming prompts
 
-📊 Stress Indicator & Safety
-Visual Stress Gauge: A 1–5 scale that fluctuates based on linguistic markers in your writing.
+High Distress: Prioritizes safety and displays immediate support resources
 
-Offline Panic Button: If extreme distress is detected, the app instantly reveals an emergency guidance panel with pre-loaded, region-agnostic coping strategies.
+Neutral: Maintains balance and emotional awareness
+
+📊 Stress Indicator & Safety Layer
+
+Visual Stress Gauge: A 1–5 scale reflecting emotional intensity based on linguistic markers
+
+Offline Panic Mode: When severe distress is detected, the UI immediately surfaces emergency guidance and coping strategies
+
+Safety-First Logic: Crisis detection is always prioritized over other features
 
 🛠️ Technical Stack
-Frontend: HTML5, CSS3, JavaScript (Vanilla)
 
-AI/ML: * Primary: Local Regex & Keyword-Sentiment Mapping (Zero Latency).
+Frontend
 
-Advanced: Integrated with Gemini Nano via the Window AI API (Experimental) for local inference.
+HTML5
 
-Storage: chrome.storage.local (Data never leaves the browser profile).
+CSS3
+
+Vanilla JavaScript
+
+AI / Mood Analysis
+
+Primary: Local keyword- and pattern-based sentiment analysis (fully offline, zero latency)
+
+Future-Ready: Architected for integration with Gemini Nano (Chrome on-device AI) once public extension APIs are available
+
+Storage
+
+chrome.storage.local
+
+All data remains inside the user’s browser profile
 
 🏗️ How It Works
-MindJournal follows a strict Local-Loop architecture:
 
-Input: User types into the Journal tab.
+MindJournal follows a strict Local-Loop Architecture:
 
-Tokenization: The extension breaks down text into sentiment tokens.
+Input: User writes in the Journal tab
 
-Inference: The local model (or Gemini Nano) evaluates the emotional weight.
+Tokenization: Text is analyzed using local linguistic markers
 
-UI Update: The UI updates the Emoji, Mood Label, and Stress Level in real-time.
+Inference: Emotional weight is evaluated via offline logic
 
-Safety Check: If specific "High Distress" triggers are met, the Panic Button UI is prioritized.
+UI Update: Emoji, mood label, and stress level update in real time
+
+Safety Check: High-distress signals immediately trigger the emergency support UI
+
+No data ever leaves the device at any stage.
 
 🛡️ Privacy Manifesto
-Most mental health apps monetize user data by selling "mood trends" to advertisers. MindJournal does the opposite. * No Account Required: Start journaling immediately.
 
-No Internet Needed: Works perfectly in airplane mode.
+Most mental health apps monetize emotional data. MindJournal does the opposite.
 
-Your Data, Your Device: To delete your history, you simply clear your extension data.
+No Account Required: Start journaling instantly
 
-🚦 Future Roadmap
-[ ] Data Export: Export entries to an encrypted PDF or Markdown file.
+No Internet Needed: Works in airplane mode
 
-[ ] Custom Themes: Dark mode and "Calm" color palettes.
+Your Data, Your Device: Clear extension data to erase all history
 
-[ ] Voice-to-Text: On-device speech recognition for hands-free journaling.
-
-# Mental_Health_Journal
+Your thoughts belong to you — not advertisers, not servers, not algorithms.
