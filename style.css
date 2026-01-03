@@ -227,3 +227,73 @@ button:active {
     box-shadow: 0 0 0 0 rgba(217, 83, 79, 0);
   }
 }
+
+.secondary {
+  background: #607d8b;
+  color: white;
+}
+
+.secondary {
+  background: #607d8b;
+  color: white;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #607d8b;
+  box-shadow: 0 0 0 2px rgba(96, 125, 139, 0.2);
+}
+
+.result-box {
+  line-height: 1.5;
+}
+
+
+.secondary {
+  background: #607d8b;
+  color: white;
+}
+
+body.mobile {
+  font-size: 14px;
+}
+
+body.mobile canvas {
+  width: 100%;
+}
+
+.emergency-box {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #ffecec;
+}
+
+.emergency-btn {
+  display: block;
+  text-decoration: none;
+  padding: 12px;
+  margin: 8px 0;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.emergency-btn.police {
+  background: #ff4d4d;
+  color: white;
+}
+
+.emergency-btn.hospital {
+  background: #ff944d;
+  color: white;
+}
+
+.emergency-btn.mental {
+  background: #6a5acd;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}

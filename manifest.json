@@ -1,9 +1,11 @@
 {
   "manifest_version": 3,
   "name": "MindJournal",
-  "version": "1.0",
-  "description": "Offline private journaling with optional Gemini Nano analysis",
-  "permissions": ["storage", "scripting"],
+  "version": "2.0",
+  "description": "Offline private mental health journaling with optional Gemini Nano support",
+  "permissions": [
+    "storage"
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -18,5 +20,3 @@
     "128": "icon128.png"
   }
 }
-
-
