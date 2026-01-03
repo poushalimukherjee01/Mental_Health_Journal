@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MindJournal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+
+        <!-- HEADER -->
+        <header class="header">
+            <h1>🧠 MindJournal</h1>
+            <span class="tag">🔒 Offline & Private</span>
+        </header>
+
+        <!-- TABS -->
+        <nav class="tabs">
+            <button class="active">Mood</button>
+            <button>Stress</button>
+            <button>Journal</button>
+        </nav>
+
+        <!-- CONTENT -->
+        <main class="content">
+
+            <!-- MOOD SCREEN -->
+            <section class="screen active">
+                <h2>Current Mood</h2>
+                <div class="status-card yellow">
+                    <div class="emoji" id="moodEmoji">🙂</div>
+                    <p class="status-title" id="moodTitle">Feeling Okay</p>
+                    <p class="status-sub" id="moodSub">Stable emotional state</p>
+                </div>
+            </section>
+
+            <!-- STRESS SCREEN -->
+            <section class="screen">
+                <h2>Stress Level</h2>
+                <div class="status-card orange">
+                    <div class="big-number" id="stressNumber">1</div>
+                    <p class="status-title" id="stressTitle">Low Stress</p>
+                    <p class="status-sub" id="stressSub">You're doing fine</p>
+                </div>
+            </section>
+
+            <!-- JOURNAL SCREEN -->
+            <section class="screen">
+                <h2>Journal Entry</h2>
+
+                <textarea id="journalText"
+                    placeholder="Write or speak freely. Everything stays on this device.Enter your mood in one word (e.g., happy, stressed, need support)"></textarea>
+
+                <button class="secondary" id="voiceBtn">🎤 Speak</button>
+                <button class="primary" id="analyzeBtn">Reflect on Mood</button>
+                <button class="danger" id="panicBtn">💙 I Need Support</button>
+
+                <div class="result-box" id="result">
+                    Your reflections and support messages will appear here.
+                    <div id="emergencyActions" class="emergency-box">
+                        <h3>🚨 Emergency Support</h3>
+
+                        <a href="tel:112" class="emergency-btn police">
+                            🚓 Call Police (112)
+                        </a>
+
+                        <a href="tel:108" class="emergency-btn hospital">
+                            🚑 Call Ambulance (108)
+                        </a>
+
+                        <a href="tel:18005990019" class="emergency-btn mental">
+                            🧠 Mental Health Helpline (Kiran)
+                        </a>
+                    </div>
+
+            </section>
+
+        </main>
+    </div>
+
+    <script src="nano.js"></script>
+    <script src="popup.js"></script>
+
+
+
+</body>
+
+</html>
